@@ -23,7 +23,6 @@ const {
   MaterialConfirm,
 } = MaterialWidgets;
 
-
 const settings = {
   ...BasicConfig.settings,
 
@@ -36,8 +35,8 @@ const settings = {
   renderValueSources: (props) => <MaterialValueSources {...props} />,
   renderProvider: (props) => <MaterialProvider {...props} />,
   renderConfirm: MaterialConfirm,
+  // renderConfirm: (props) => <MaterialConfirm {...props} />,
 };
-
 
 const widgets = {
   ...BasicConfig.widgets,
@@ -78,7 +77,6 @@ const widgets = {
     factory: (props) => <MaterialDateTimeWidget {...props} />,
   },
 };
-
 
 const types = {
   ...BasicConfig.types,
